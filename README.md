@@ -24,50 +24,27 @@
 - [📝 License](#license)
 
 
-# 📖<a name="about-project">Math Magician</a>
+# 📖<a name="about-project">OOP school library</a>
 
 
-***In this activity you will set up a Calculator project for the Math Magician SPA, using React.***
+***OOP school library tool to record what books are in the library and who borrows them***
 
 
-## 🛠 Built With <a name="built-with">Vscode, Github</a>
+## 🛠 Built With <a name="built-with">Ruby, VSCode</a>
 
-### <a name="tech-stack">React</a>
-
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Styling</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">React</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Functionality</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">React</a></li>
-  </ul>
-</details>
+### <a name="tech-stack">Ruby</a>
 
 ### Key Features <a name="key-features"></a>
 
 
-- **[SPA]()**
-- **[Calculator]()**
+- **[Add classes]()**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://Chaseknis.github.io/OOP_school_library/)
+- [No live demo link](https://Chaseknis.github.io/OOP_school_library/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -75,15 +52,15 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 
-A beginner developer can use this website as a starting point for gaining basic knowledge on how to use React.js.
+A developer can use this project for gaining knowledge on how to use Ruby classes.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-- NODE
-- ESlint set up
-- React
+- Ruby installed in your machine
+- Rubcop set up
+- Github
 
 
 ### Setup
@@ -102,7 +79,7 @@ Commands:
 
 ```sh
   gh repo clone Chaseknis/OOP_school_library
-  cd leaderboard
+  cd OOP_school_library
   npm install -y
 ```
 <br><br>
@@ -124,24 +101,12 @@ npm install -g serve
 
 To run tests, run the following command:
 
-- To check for CSS errors
+- To check run this command
 
 ```sh
-    npx stylelint "**/*.{css,scss}"
+    rubcop -a
 
 ```
-- To check for HTML errors
-
-```sh
-    npx hint .
-```
-
-- To check for Javascript errors
-
-```sh
-    npx eslint .
-```
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +125,9 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Making simple math calculations]()**
+- [ ] **[Add new students or teachers]()**
+- [ ] **[Add new books]()**
+- [ ] **[Save records of who borrowed a given book and when]()**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
