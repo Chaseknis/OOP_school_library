@@ -101,10 +101,10 @@ npm install -g serve
 
 To run tests, run the following command:
 
-- To check run this command
+- To check for linters run this command
 
 ```sh
-    rubcop -a
+    rubocop -a
 
 ```
 
