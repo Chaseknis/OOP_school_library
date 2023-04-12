@@ -7,7 +7,6 @@
   - [🛠 Built With](#htmlt_and_css)
     - [Tech Stack](#tech-stack)
     - [Key Features](#mobile_size)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -41,13 +40,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [No live demo link](https://Chaseknis.github.io/OOP_school_library/)
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
