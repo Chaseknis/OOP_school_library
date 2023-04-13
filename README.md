@@ -51,7 +51,7 @@ A developer can use this project for gaining knowledge on how to use Ruby classe
 In order to run this project you need:
 
 - Ruby installed in your machine
-- Rubcop set up
+- Rubocop set up
 - Github
 
 
