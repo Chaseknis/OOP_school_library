@@ -37,7 +37,16 @@ class App
     case select_person
     when 1
       print 'Has parent permission? [Y/N]: '
-      @people << Student.new(age, nil, name: name, parent_permission: true)
+      choice = gets.chomp.downcase
+      case choice
+      when 'y'
+        student = Student.new(age: age, name: name, parent_permission: true)
+      when 'n'
+        student = Student.new(age: age, name: name, parent_permission: false)
+      else
+        puts 'Invalid. Try again'
+      end
+      @people << student
       puts 'Student created successfully'
     when 2
       print 'Specialization: '
@@ -60,8 +69,16 @@ class App
   end
 
   def create_rental
+    puts 'Choose the number of the book you want to rent:'
+    @books.each_with_index do |book, index|
+      puts "#{index + 1}: Title: #{book.title} | Author: #{book.author} | ID: #{book.id}"
+    end
     print 'Book ID: '
     book_id = gets.chomp.to_i
+    puts 'Type your ID:'
+    @people.each do |person|
+      puts "[#{person.class}] Name: #{person.name} | Age: #{person.age} | ID: #{person.id}"
+    end
     print 'Person ID: '
     person_id = gets.chomp.to_i
     book = @books.find { |b| b.id == book_id }
@@ -71,7 +88,7 @@ class App
     elsif person.nil?
       puts "Person not found with ID: #{person_id}"
     else
-      rental = Rental.new(book, person)
+      rental = Rental.new(Time.now, person, book)
       @rentals << rental
       puts "Rental created: ID: #{rental.id}, Book: #{rental.book.title}, Person: #{rental.person.name}"
     end
