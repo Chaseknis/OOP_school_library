@@ -39,12 +39,12 @@ class App
       print 'Has parent permission? [Y/N]: '
       permission = gets[0].capitalize
       permission = permission == 'Y'
-      @people << Student.new(name: name, age: age, permission: permission)
+      @people << Student.new(age, nil, name: name, parent_permission: true)
       puts 'Student created successfully'
     when 2
       print 'Specialization: '
       specialization = gets.chomp
-      @people << Teacher.new(name: name, age: age, specialization: specialization)
+      @people << Teacher.new(age, specialization, name: name)
       puts 'Teacher created successfully'
     else
       puts 'Invalid choice. Choose 1 for student or 2 for teacher.'

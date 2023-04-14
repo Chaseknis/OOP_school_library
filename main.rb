@@ -4,7 +4,7 @@ def display_options
   puts 'Please choose an option:'
   puts '1. List all books'
   puts '2. List all people'
-  puts '3. Add a person (Techer or Student)'
+  puts '3. Add a person (Teacher or Student)'
   puts '4. Create a book'
   puts '5. Create a rental'
   puts '6. List rentals for a person'
