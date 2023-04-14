@@ -74,7 +74,7 @@ class App
       @rentals << rental
       puts "Rental created: ID: #{rental.id}, Book: #{rental.book.title}, Person: #{rental.person.name}"
     end
-  end  
+  end
 
   def list_rentals(person_id)
     person = @people.find { |p| p.id == person_id }
