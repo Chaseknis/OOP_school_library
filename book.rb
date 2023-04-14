@@ -27,6 +27,6 @@ class Book
   def generate_unique_id
     timestamp = Time.now.strftime('%Y%m%d%H%M%S%L')
     random_suffix = rand(1000..9999)
-    "#{timestamp}-#{random_suffix}"
+    "#{timestamp}#{random_suffix}"
   end
 end
