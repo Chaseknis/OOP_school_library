@@ -16,7 +16,7 @@ class App
   def list_books
     puts 'All Books:'
     books.each do |book|
-      puts "Title: #{book.title}, Author: #{book.author}"
+      puts "Title: #{book.title}, Author: #{book.author}, Id: #{book.id}"
     end
   end
 
