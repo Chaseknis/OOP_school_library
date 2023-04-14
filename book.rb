@@ -1,10 +1,11 @@
 class Book
-  attr_accessor :title, :author, :rentals
+  attr_accessor :title, :author, :rentals, :id
 
   def initialize(title, author)
     @title = title
     @author = author
     @rentals = []
+    @id = generate_unique_id # Call a method to generate a unique ID for the book during initialization
   end
 
   def add_rental(date, person)
@@ -19,5 +20,13 @@ class Book
 
   def rented_by?(person)
     rentals.any? { |rental| rental.person == person && rental.return_date.nil? }
+  end
+
+  private
+
+  def generate_unique_id
+    timestamp = Time.now.strftime('%Y%m%d%H%M%S%L')
+    random_suffix = rand(1000..9999)
+    "#{timestamp}-#{random_suffix}"
   end
 end
