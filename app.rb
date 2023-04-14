@@ -27,7 +27,7 @@ class App
     end
   end
 
-  def create_person
+  def create_person # rubocop:disable Metrics/MethodLength
     print 'To create a student type (1) and type (2) for a teacher? [Input the number]: '
     select_person = gets.chomp.to_i
     print 'Name: '
@@ -68,7 +68,7 @@ class App
     puts "Book created successfully with ID: #{book.id}"
   end
 
-  def create_rental
+  def create_rental # rubocop:disable Metrics/MethodLength
     puts 'Choose the number of the book you want to rent:'
     @books.each_with_index do |book, index|
       puts "#{index + 1}: Title: #{book.title} | Author: #{book.author} | ID: #{book.id}"
