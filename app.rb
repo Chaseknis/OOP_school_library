@@ -63,18 +63,18 @@ class App
     book_id = gets.chomp.to_i
     print 'Person ID: '
     person_id = gets.chomp.to_i
-    book = Book.find(book_id)
-    person = Person.find(person_id)
+    book = @books.find { |b| b.id == book_id }
+    person = @people.find { |p| p.id == person_id }
     if book.nil?
       puts "Book not found with ID: #{book_id}"
     elsif person.nil?
       puts "Person not found with ID: #{person_id}"
     else
-      rental = Rental.new(book: book, person: person)
+      rental = Rental.new(book, person)
       @rentals << rental
       puts "Rental created: ID: #{rental.id}, Book: #{rental.book.title}, Person: #{rental.person.name}"
     end
-  end
+  end  
 
   def list_rentals(person_id)
     person = @people.find { |p| p.id == person_id }
