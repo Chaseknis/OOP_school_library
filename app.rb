@@ -27,7 +27,7 @@ class App
     end
   end
 
-  def create_person # rubocop:disable Metrics/MethodLength
+  def create_person
     print 'To create a student type (1) and type (2) for a teacher? [Input the number]: '
     select_person = gets.chomp.to_i
     print 'Name: '
@@ -37,8 +37,6 @@ class App
     case select_person
     when 1
       print 'Has parent permission? [Y/N]: '
-      permission = gets[0].capitalize
-      permission = permission == 'Y'
       @people << Student.new(age, nil, name: name, parent_permission: true)
       puts 'Student created successfully'
     when 2
